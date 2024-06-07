@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Interior Design Startup</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('/images/about-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+
+        section#about {
+            margin-top: 100px;
+            padding: 2em;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            border-radius: 10px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #about h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        #about p {
+            font-size: 1.5em;
+            margin-bottom: 2em;
+        }
+    </style>
+</head>
+<body>
+    <%- include('partials/header') %>
+
+    <section id="about">
+        <h1>About Us</h1>
+        <p>We are a passionate team of interior designers dedicated to transforming your space into a dream come true.</p>
+        <p>With years of experience and a keen eye for detail, we bring your vision to life with creativity and precision.</p>
+    </section>
+
+    <%- include('partials/footer') %>
+
+</body>
+</html>

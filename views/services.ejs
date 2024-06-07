@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Interior Design Startup</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('/images/services-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+
+        section#services {
+            margin-top: 100px;
+            padding: 2em;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            border-radius: 10px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #services h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        #services p {
+            font-size: 1.5em;
+            margin-bottom: 2em;
+        }
+
+        .service-item {
+            margin-bottom: 1.5em;
+        }
+
+        .service-item h2 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        .service-item p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <%- include('partials/header') %>
+
+    <section id="services">
+        <h1>Our Services</h1>
+        <div class="service-item">
+            <h2>Residential Design</h2>
+            <p>Transform your home into a sanctuary with our bespoke residential design services.</p>
+        </div>
+        <div class="service-item">
+            <h2>Commercial Design</h2>
+            <p>Enhance your business environment with our innovative and functional commercial designs.</p>
+        </div>
+        <div class="service-item">
+            <h2>Renovation</h2>
+            <p>Give your space a new lease of life with our comprehensive renovation services.</p>
+        </div>
+    </section>
+
+    <%- include('partials/footer') %>
+
+</body>
+</html>
